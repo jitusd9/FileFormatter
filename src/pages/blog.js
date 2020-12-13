@@ -12,15 +12,16 @@ export default function About({ data }) {
             position : relative;
             height : auto;
             width : auto;
-            background : #f9f9f9;
+            background : transparent;
             display : flex;
             align-items : center;
             flex-direction : column;
             text-align : center;
+            padding : 10px 0;
           `}>
 
           <h2><span className={"theme"}>B</span>log</h2>
-          <h4>Latest</h4>
+          {/* <p>Latest</p> */}
           
           <div className="blogList">
               {data.allMarkdownRemark.edges.map(({ node }) => (
@@ -43,6 +44,7 @@ export default function About({ data }) {
                     <span
                       css={css`
                         color: #999;
+                        font-size : 18px;
                       `}
                     >
                       — {node.frontmatter.date}
@@ -50,6 +52,7 @@ export default function About({ data }) {
                   </h3>
                   <p  css={css`
                         color: #666;
+                        font-style : italic;
                       `}
                       >{node.excerpt}</p>
                 </div>

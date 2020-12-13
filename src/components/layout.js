@@ -71,9 +71,7 @@ export default function Layout({ children }) {
         left: 10px;
       `}>{data.site.siteMetadata.title}</p> */}
       
-      <div css={css`
-          padding : ${rhythm(1)};
-      `}>
+      <div className="layout">
         {children}
       </div>
 
@@ -95,7 +93,7 @@ export default function Layout({ children }) {
             flex-direction: column;
           `}
         > 
-          <h3>Yes! We are Social too<span css={css` font-size : 0.6em; color : #999; `}>follow us</span> </h3>
+          <h3>Yes! We are Social<span css={css` font-size : 0.6em; color : #999; `}>follow us</span> </h3>
 
           <div>
             <Link to="/">Facebook 🤓</Link>

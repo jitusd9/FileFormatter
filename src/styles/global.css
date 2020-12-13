@@ -12,6 +12,16 @@ html {
   color: #8200fc;
 }
 
+.layout{
+  padding: 2%;
+}
+
+@media screen and (max-width: 600px){
+  .layout{
+    padding: 1%;
+  }
+}
+
 .navbar{
   height: 80px;
   display: flex;
@@ -400,7 +410,7 @@ a:hover{
 
 /* blog page css  */
 .blogList{
-  background:url("https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500") center center /cover no-repeat;
+  background: #f9f9f9;
   box-shadow: 0 2px 3px rgba(0,0,0,0.1) inset;
 }
 
@@ -409,17 +419,17 @@ a:hover{
   padding: 5px 10px;
   margin: 40px;
   border-radius: 5px;
-  background: transparent;
+  background: #fff;
   box-shadow: 0 5px 8px rgba(0,0,0,0.1);
   z-index: 1;
   overflow: hidden;
-  backdrop-filter: blur(10px);
-  border: 0.1px solid rgb(167, 167, 167);
+  /* backdrop-filter: blur(10px); */
+  /* border: 0.1px solid rgb(167, 167, 167); */
 }
 
-.blogCard h3{
+/* .blogCard h3{
   color: #fff;
-}
+} */
 
 .blogCard:hover{
   color: #fff;
@@ -436,18 +446,17 @@ a:hover{
   background: #ffc400;
   transition: all .4s;
   z-index: -1;
-  display: none;
 }
-/* 
+
 .blogCard:hover::after{
   top: 0;
   left: 0;
   transform: rotate(180deg);
-  animation: colorful 1s infinite alternate;
-} */
+  animation: colorful 5s infinite alternate;
+}
 
 .blogCard:hover p{
-  color: #ddd;
+  color: #fff;
 }
 
 @media screen and (max-width: 600px){
