@@ -42,8 +42,6 @@ export default function Layout({ children }) {
         </h3>
         </Link>
 
-       
-        
         <div className={"menu"}
         css={css`
             float: right;
@@ -97,7 +95,7 @@ export default function Layout({ children }) {
             flex-direction: column;
           `}
         > 
-          <h3>Yes! We are Social <span css={css` font-size : 0.6em; color : #999; `}>follow us</span> </h3>
+          <h3>Yes! We are Social too<span css={css` font-size : 0.6em; color : #999; `}>follow us</span> </h3>
 
           <div>
             <Link to="/">Facebook 🤓</Link>
